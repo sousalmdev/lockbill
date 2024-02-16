@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockBill-Planejamento</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/lockbill/css/plan.css">
+    <link rel="stylesheet" href="/lockbill/css/aside.css">
+    <link rel="stylesheet" href="/lockbill/css/nav.css">
+    <link rel="stylesheet" href="/lockbill/css/dashboard.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <aside id="navigation">
+        <a href="/dashboard.html">
+        <img src="/img/PhotoRoom_20240206_120455-transformed-removebg-preview.png" alt=""></a>
+        <ul>
+            
+            <li><span class="material-icons md-24">
+                assignment_turned_in
+                </span></span><a href="planejamento.html">Planejamento</a></li>
+            <li><span class="material-icons md-24">addchart</span><a href="representacao_grafica.html">Representação Gráfica</a></li>
+            <li><span class="material-icons md-24">psychology_alt</span><a href="onde_aplico.html">Onde Aplico?</a></li>
+                <li><span class="material-icons md-24">
+                    paid
+                    </span><a href="proposta.html">Proposta da LockBill</a></li>
+                    <li><span class="material-icons md-24">chat</span><a href="chatbot.html">Fale com nossa IA!</a></li>
+        </ul>
+        <footer>
+            <ul>
+            <li>
+        <li><span class="material-icons md-24">logout</span></li>
+        <li></li></ul>
+        </footer>
+    </aside>
+    <header class="plan">
+        <h1>PLANEJAMENTO <span>
+        FINANCEIRO</span></h1>
+    </header>
+    <main> 
+        <div class="input-title">
+                <img src="/img/PhotoRoom_20240206_120455-transformed-removebg-preview (1).png" alt="">
+                <h2>Registre seu débito:</h2>
+            </div>
+        <section class="input-debt">
+            <div class="row">
+                <div class="text-area type">
+                <label for="select" class="label-debt">Escolha o tipo de conta:</label>
+                <select name="select" id="select-debt">
+                <option value="" selected>Escolha:</option>
+                <option value="Despesas">Despesas</option>
+                <option value="Serviços Gerais">Serviços Gerais</option>
+                <option value="Entretenimento">Entretenimento</option>
+                <option value="Roupas e Acessórios">Roupas e Acessórios</option>
+                <option value="Tributos Obrigatórios">Tributos Obrigatórios</option>
+            </select>
+            
+            </div>
+            <div class="text-area value">
+                        <label class="label-debt" for="text">Insira o valor:</label>
+                        <input type="text" name="debt" id="debt-val" placeholder="Ex.:430,00"> 
+            </div>  
+    </div> 
+
+            <div class="text-area">
+            <label class="label-debt" for="text">Insira a descrição da sua conta a pagar:</label>
+            <input type="text" name="debt" id="debt-desc" placeholder="Ex.: Conta de luz">
+</div>
+
+
+         <input id="submit-debt" type="submit" value="Salvar">
+        </section>
+        <section class="debt-list">   
+                   
+            <div class="input-title">
+                <img src="/img/PhotoRoom_20240206_120455-transformed-removebg-preview (1).png" alt="">
+      <h2>Débitos Registrados:</h2>
+            </div>
+            
+            <div id="list">
+          
+        </div>
+        </section>
+    </main>
+</body>
+</html>
